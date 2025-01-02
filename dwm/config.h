@@ -8,14 +8,12 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "hasklug nerd font black:size=10" };
 static const char dmenufont[]       = { "hasklug nerd font black:size=10" };
-//static const char col_gray1[]       = "#222222";
 static const char col_gray1[]       = "#000000";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#1f242a";
-//static const char col_cyan[]        = "#0088cc";
-//static const char col_cyan[]        = "#220022";
+static const char col_cyan[]        = "#0088cc";
+//static const char col_cyan[]        = "#1f242a";
 //static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -74,8 +72,8 @@ static const char *pavucontrol[] = { "pavucontrol", "-t", "3", NULL };
 static const char *upvol[] = { "pactl", "set-sink-volume", "0", "+5%", NULL };
 static const char *mutevol[] = { "pactl", "set-sink-mute", "0", "toggle", NULL };
 static const char *downvol[] = { "pactl", "set-sink-volume", "0", "-5%", NULL };
-static const char *inclight[] = { "xbacklight", "-inc", "0.5", NULL };
-static const char *declight[] = { "xbacklight" , "-dec", "0.5", NULL };
+static const char *inclight[] = { "brightnessctl", "set", "1%+", NULL };
+static const char *declight[] = { "brightnessctl" , "set", "1%-", NULL };
 static const char *xgamma_on[] = { "xgamma", "-rgamma", "1.440","-ggamma", "1.220", "-bgamma", "0.765", NULL };
 static const char *xgamma_off[] = { "xgamma", "-rgamma", "1.0","-ggamma", "1.0", "-bgamma", "1.0", NULL };
 static const char *scrot[] = { "scrot", "-d", "1", NULL };

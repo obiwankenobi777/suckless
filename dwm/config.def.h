@@ -62,9 +62,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-c", "-l", "11", "-bw", "7" };
-static const char *termcmd[]  = { "alacritty", NULL };
-static const char *st[]  = { "st", NULL };
-static const char *thunar[] = { "thunar", NULL };
+static const char *termcmd[]  = { "st", NULL };
 static const char *evince[] = { "evince", NULL };
 static const char *brave[] = { "brave", NULL };
 static const char *chromium[] = { "chromium", NULL };
@@ -82,8 +80,6 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_o,      spawn,          {.v = termcmd } },
-	{ MODKEY,                       XK_n,      spawn,          {.v = st } },
-	{ MODKEY,                       XK_u,      spawn,          {.v = thunar } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = evince} },
 	{ MODKEY,                       XK_a,      spawn,          {.v = brave} },
 	{ MODKEY,                       XK_s,      spawn,          {.v = chromium} },

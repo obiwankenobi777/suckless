@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "hasklug nerd font black:pixelsize=16:antialias=true:autohint=true";
+static char *font = "hasklug nerd font black:pixelsize=15:antialias=true:autohint=true";
 static int borderpx = 3;
 
 /*
